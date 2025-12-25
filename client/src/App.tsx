@@ -11,7 +11,8 @@ import { RootState } from './store/store';
 
 
 
-export const socket = io("http://localhost:8000")
+export const socket = io("https://mern-chat-app-itx9.onrender.com")
+
 
 function App() {
   const user = useSelector((state: RootState) => state.User.user);
