@@ -11,7 +11,8 @@ import User from "./models/User.js";
 dotenv.config();
 const app = express();
 const port = 8000;
-const connectionUrl = process.env.ConnectionUrl;
+const connectionUrl = process.env.MONGO_URI;
+
 
 const httpServer = createServer(app);
 
